@@ -1,7 +1,6 @@
 {
   "author": "Adam J. Jolicoeur",
   "name": "Game Tracker",
-  "display": "standalone",
   "start_url": "/",
   "short_name": "GameTracker",
   "theme_color": "#212121",
@@ -9,10 +8,12 @@
   "orientation": "any",
   "background_color": "#212121",
   "prefer_related_applications": false,
+  "display": "standalone",
   "display_override": [
     "window-controls-overlay",
     "standalone",
-    "minimal-ui"
+    "minimal-ui",
+    "browser"
   ],
   "launch_handler": {
     "client_mode": "focus-existing"
@@ -61,13 +62,11 @@
       "type": "image/png"
     },
     {
-      "src": "assets/screenshots/screenshot_wide.png",
-      "sizes": "2400x1200",
-      "type": "image/png",
-      "form_factor": "wide"
+      "src": "assets/screenshots/screenshot_wide.png", "sizes": "2400x1200", "type": "image/png", "form_factor": "wide"
     }
   ],
-  "features": [
+  "features":
+  [
     "Cross Platform",
     "fast",
     "simple"
@@ -98,7 +97,7 @@
       ]
     }
   ],
-  "id": "GameTracker",
+  "id": "/?GameTracker=1",
   "dir": "ltr",
   "lang": "en",
   "handle_links": "preferred",
@@ -156,5 +155,9 @@
         }
       ]
     }
-  ]
+  ],
+  "scope": "https://www.adamjolicoeur.me",
+  "edge_side_panel": {
+    "preferred_width": 500
+  }
 }
